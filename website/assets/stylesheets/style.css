@@ -1,0 +1,70 @@
+/* default properties */
+body{
+    margin:0;
+    font-family: "Inter", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top:0;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* helper classes */
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+
+.row:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.w-100{
+    width: 100%;
+}
+
+#container{
+    width: 1020px;
+    margin: 10px auto  0 auto;
+}
+/* header */
+header{
+    background-color: #029270;
+}
+
+.logo{
+    width: 14%;
+}
+.logo a{
+    display: block;
+    padding: 8px 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 14px;
+    display: block;
+    padding: 16px 8px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a i{
+    font-size: 12px;
+    margin-left: 5px;
+}
+nav ul li:hover a{
+    background-color: #038062 ;
+}
