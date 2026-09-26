@@ -2,6 +2,7 @@
 body{
     margin:0;
     font-family: "Inter", sans-serif;
+    background:#ECF0F1;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -52,19 +53,82 @@ header{
     display: block;
     padding: 8px 20px;
 }
-nav ul li a{
+nav>ul>li>a{
     color: white;
     font-size: 14px;
     display: block;
-    padding: 16px 8px;
+    padding: 18px 8px;
 }
-nav ul li{
+nav>ul>li{
     display: inline-block;
+    position: relative;
 }
 nav ul li a i{
     font-size: 12px;
     margin-left: 5px;
 }
-nav ul li:hover a{
+nav>ul>li:hover>a{
     background-color: #038062 ;
+}
+
+nav ul li .dropdown{
+    display: none;
+    position: absolute;
+    width: 190px;
+    background: whitesmoke;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown ul li{
+    display: block;
+}
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+.dropdown ul li a{
+    color: black;
+    display: block;
+    padding: 16px 8px;
+    font-size: 14px;
+
+}
+
+nav>ul>li:last-child>a{
+    padding: 8px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.sidebar1 {
+    width: 20%;
+}
+
+.sidebar1 h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #029270;
+}
+
+.sidebar1 ul li a{
+    font-size: 14px;
+    color: black;
+}
+
+.sidebar1 .latest-news{
+    padding: 16px 10px;
+    background-color: white;   
+}
+
+.sidebar1 small{
+    display: block;
+    color: #666;
+    font-size: 12px;
+}
+.sidebar1 ul li{
+    border-bottom: 1px solid #ecebeb;
+    padding: 10px 0;
+
 }
