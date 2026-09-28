@@ -1,4 +1,8 @@
 /* default properties */
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin:0;
     font-family: "Inter", sans-serif;
@@ -104,9 +108,10 @@ nav>ul>li:last-child>a{
 
 .sidebar1 {
     width: 20%;
+    margin-top: 5px;
 }
 
-.sidebar1 h2{
+.sidebar1 h2,.sidebar2 h2{
     font-size: 18px;
     text-transform: uppercase;
     color: #029270;
@@ -131,4 +136,85 @@ nav>ul>li:last-child>a{
     border-bottom: 1px solid #ecebeb;
     padding: 10px 0;
 
+}
+#sec-header{
+    background-color: #4A4A4A;
+
+}
+
+#sec-header button{
+    background-color: #4A4A4A ;
+    color: white;
+    border: none;
+    display: block;
+    padding: 12px 8px;
+}
+
+.sec-nav ul li  a{
+    color: white;
+    font-size: 13px;
+    display: block;
+    padding: 14px 8px;
+}
+.sec-nav ul li{
+    display: inline-block;
+}
+
+#main{
+    background-color: #fff;
+    border: 5px solid #ECF0F1;
+    padding: 18px;
+    width: 45%;
+}
+#main img{
+    border-radius: 5px;
+}
+.sidebar2 {
+    width: 35%;
+}
+
+.sidebar2 .featured{
+    padding: 16px 14px;
+    background-color: #fff;
+    margin-top: 5px;
+
+}
+.featured .card{
+    border: 1px solid #ecebeb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.featured .card h4{
+    margin-bottom: 0;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 12px;
+}
+
+.card-img{
+    position: relative;
+}
+
+.card-img .play{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+
+}
+
+.time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    border-radius: 10px;
 }
