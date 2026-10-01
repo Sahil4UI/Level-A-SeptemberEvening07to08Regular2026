@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border: 1px solid red;
+            width: 50%;
+            margin:200px auto 0 auto;
+        }
+        img{
+            transition: 2s;
+            width: 30%;
+        }
+        
+        .a:hover img{
+            transform: translateX(600px);
+            transform: translateY(600px);
+            transform: translateZ(600px);
+            transform: translate(600px,600px);
+            transform: translate(600px,600px);
+
+            transform: scaleX(3);
+            transform: scaleY(3);
+            transform: scale(3);
+            transform: scale(0.5);
+
+            transform: skewX(30deg);
+            transform: skewY(30deg);
+            transform: skew(30deg,30deg);
+
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);
+            transform: rotateZ(180deg);
+            transform: rotate3d(1,1,1,360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <img src="image.png" alt="">
+    </div>
+</body>
+</html>

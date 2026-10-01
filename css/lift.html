@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lift{
+            width: 400px;
+            height:350px;
+            border: 1px solid red;
+            display: flex;
+            overflow: hidden;
+        }
+        .left,.right{
+            width: 50%;
+            height: 350px;
+            background-color: bisque;
+            border: 1px solid red;
+            transition: 2s;
+        }
+        .lift:hover .left{
+            transform: translateX(-100%);
+        }
+        .lift:hover .right{
+            transform: translateX(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="lift">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
