@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        input {
+            grid-column: span 4;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+
+        <input type="text" placeholder="0">
+        <button onclick="showNum()">7</button>
+        <button onclick="showNum()">8</button>
+        <button onclick="showNum()">9</button>
+        <button onclick="showOpr()">+</button>
+
+        <button onclick="showNum()">4</button>
+        <button onclick="showNum()">5</button>
+        <button onclick="showNum()">6</button>
+        <button onclick="showOpr()">-</button>
+
+        <button onclick="showNum()">1</button>
+        <button onclick="showNum()">2</button>
+        <button onclick="showNum()">3</button>
+        <button onclick="showOpr()">*</button>
+
+        <button onclick="clr()">C</button>
+        <button onclick="showNum()">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="showOpr()">/</button>
+
+    </div>
+    <script>
+        var result = "";
+        var isOpr = false;
+        // string
+        var input = document.querySelector("input");
+        function showNum() {
+            result += event.target.innerText;
+            input.value = result;
+            console.log(result);
+            isOpr = false;
+        }
+
+        function showOpr() {
+            if (isOpr == false) {
+                result += event.target.innerText;
+            }
+            else{
+                result = result.slice(0,result.length-1)+event.target.innerText;
+            }
+           
+            input.value = result;
+            console.log(result);
+            isOpr = true;
+
+        }
+
+        function calculate() {
+            result = eval(result)
+            input.value = result;
+            console.log(result);
+
+        }
+
+        function clr() {
+            result = "";
+            input.value = result;
+
+        }
+    </script>
+</body>
+
+</html>

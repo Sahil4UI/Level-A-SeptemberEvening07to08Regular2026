@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- events -->
+     <!-- <input type="text" placeholder="Enter Data" onclick="show();"> -->
+     <!-- <input type="text" placeholder="Enter Data" onblur="show();"> -->
+     <!-- <input type="text" placeholder="Enter Data" onchange="show();"> -->
+     <!-- <input type="text" placeholder="Enter Data" onkeydown="show();"> -->
+     <!-- <input type="text" placeholder="Enter Data" onkeyup="show();"> -->
+     <!-- <input type="text" placeholder="Enter Data" onscroll="show();"> -->
+     <input type="text" placeholder="Enter Data" onmouseout="show();">
+     <!-- <input type="text" placeholder="Enter Data" onmouseover="show();"> -->
+
+
+     <h1></h1>
+
+
+     <script>
+        var input = document.querySelector("input");
+        var h1 = document.querySelector("h1");
+
+        function show(){
+            h1.innerText = input.value;
+        }
+     </script>
+</body>
+</html>

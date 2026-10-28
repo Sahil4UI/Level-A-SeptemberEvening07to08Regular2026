@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label>UserName : </label><input type="text"><br><br>
+        <label>Password : </label><input id="pass" type="password" onkeyup="validate()"><br><br>
+
+        <!-- if password length > 12 -  strong -->
+        <!-- if password length > 8 -  medium -->
+        <!-- if password length < 8  -  weak -->
+
+        <button type="submit">LOGIN</button>
+
+        <script>
+            var password = document.querySelector("#pass");
+            function validate() {
+                var pass_value = password.value;
+                if (pass_value.length >= 12) {
+                    password.style.border="3px solid green";
+                }
+                else if (pass_value.length >=8){
+                    password.style.border="3px solid orange";
+                }
+                else{
+                    password.style.border="3px solid red";
+                }
+            }
+        </script>
+    </form>
+    <script>
+
+    </script>
+</body>
+
+</html>

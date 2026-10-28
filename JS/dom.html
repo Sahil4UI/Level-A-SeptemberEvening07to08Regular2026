@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dom - document object model -->
+     <input type="text" placeholder="Enter Name :">
+     <button onclick="show();">Click Me</button>
+     <hr>
+     <h1></h1>
+
+
+     <script>
+// dom - js ki help se html tags ko script me lao
+        var input = document.querySelector("input");
+        // ek tag ka name jo chahie
+        var h1 = document.querySelector("h1");
+        
+        function show(){
+            h1.innerHTML = input.value;
+        }
+
+
+     </script>
+</body>
+</html>
